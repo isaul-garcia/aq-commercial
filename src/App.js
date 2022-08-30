@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import WebFont from 'webfontloader'
+import GlobalStyle from './globalStyles'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { Home, Thanks } from './pages'
+import { Navbar } from './components'
 
-function App() {
+const App = () => {
+  // eslint-disable-next-line no-unused-vars
+  const [isScroll, setIsScroll] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 50) {
+      setIsScroll(true);
+    } else {
+      setIsScroll(false);
+    }
+  };
+
+  window.addEventListener('scroll', changeBackground);
+
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['DM Sans']
+      }
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/thankyou" element={<Thanks />} />
+      </Routes>
+    </Router>
   );
 }
 
