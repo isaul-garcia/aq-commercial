@@ -30,7 +30,7 @@ const Form = ({ data, where, format, photoType, vidType, scene, amount, addons }
                 </TextWrapper>
                 <Section>
                     <MyForm>
-                        <form action="https://formsubmit.co/390cb25808e53ae37c5a62650fe1f613" method="POST">
+                        <form action="https://formsubmit.co/c2e36065a7b4566d00310bd71bdd720e" method="POST">
                             <input type="hidden" name="WHERE" value={where} />
                             <input type="hidden" name="FORMAT" value={format} />
                             <input type="hidden" name="PHOTO" value={photoType} />
