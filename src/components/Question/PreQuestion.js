@@ -8,7 +8,7 @@ import {
     TextWrapper
 } from './Question.elements'
 
-const Question = ({ data, choices, setChoices, onlyOne, hide, checkFormat, ...props }) => {
+const Question = ({ data, choices, setChoices, onlyOne, hide, checkFormat, page, ...props }) => {
     const [oneChosen, setOneChosen] = useState(false)
 
     const handleChosen = (answer) => {
@@ -25,11 +25,7 @@ const Question = ({ data, choices, setChoices, onlyOne, hide, checkFormat, ...pr
 
     return (
         <>
-            <Wrapper hide={props.hide}>
-                <TextWrapper>
-                    <h2>{data.info.main}</h2>
-                    <h3>{data.info.sub}</h3>
-                </TextWrapper>
+            <Wrapper hide={props.hide} page={page}>
                 <Section>
                     {data.options ? data.options.map((props) => (
                         <GridItems
@@ -45,6 +41,10 @@ const Question = ({ data, choices, setChoices, onlyOne, hide, checkFormat, ...pr
                         />
                     )) : null}
                 </Section>
+                <TextWrapper>
+                    <h2>{data.info.main}</h2>
+                    <h3>{data.info.sub}</h3>
+                </TextWrapper>
             </Wrapper>
         </>
     )

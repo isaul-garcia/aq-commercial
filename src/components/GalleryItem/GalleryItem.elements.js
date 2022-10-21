@@ -1,28 +1,15 @@
 import styled from 'styled-components/macro'
 
 export const ItemContainer = styled.div`
-    flex: 25%;   
-    height: 95%;
-    float: left;
+    flex: 33.33%;   
+    height: ${({ half }) => (half ? '40vh' : '60vh')};
     position: relative;
     cursor: pointer;
     transition: all .2s ease-in-out;
 
-    @media screen and (max-width: 1500px) {
-        height: 90%;
-    }
-
     @media screen and (max-width: 991px) {
         flex: ${({ half }) => (half ? '50%' : '100%')};  
         height: ${({ half }) => (half ? '50%' : '50%')};
-    }
-
-    &:nth-child(odd) {
-        padding-left: ${({ half }) => (half ? '0' : '6vw')};
-    }
-
-    &:nth-child(even) {
-        padding-right: ${({ half }) => (half ? '0' : '6vw')};
     }
 `
 
@@ -33,41 +20,18 @@ export const ItemWrapper = styled.div`
     position: relative;
 `
 
-export const HoverHelper = styled.div`
-    width: calc(100% - 16px);
-    height: calc(100% - 16px);
-    position: absolute;
-    transition: all 0.2s ease-in-out;
-    justify-content: center;
-    margin: 8px;
-    background-color: #ffffff00;
-
-    ${({ isChosen }) => (isChosen === false ? `
-        background-color: #ffffff66;
-    ` : ``)};
-
-    ${ItemContainer}:hover & {
-        width: calc(100% - 24px);
-        height: calc(100% - 24px);
-        margin: 12px;
-    }  
-
-    @media screen and (max-width: 991px) {
-        ${ItemContainer}:hover & {
-            transition: all 0s ease-in-out;
-            width: calc(100% - 16px);
-            height: calc(100% - 16px);
-            margin: 8px;
-    }  
-    }
-`
-
 export const TextContainer = styled.div`
     position: absolute;
     width: 100%;
+    height: 100%;
     transition: all 0.2s ease-in-out;
     display: flex;
-    bottom: -50px;
+    margin: auto;
+    opacity: 0;
+
+    ${ItemContainer}:hover & {
+        opacity: 1;
+    } 
 
     @media screen and (max-width: 991px) {
         width: 90%;
@@ -76,6 +40,7 @@ export const TextContainer = styled.div`
 `
 
 export const TextWrapper = styled.div`
+    width: 100%;
     text-decoration: none; 
     text-align: center;
     align-self: center;
@@ -106,7 +71,8 @@ export const SubText = styled.h4`
     cursor: pointer;
 `
 
-export const ImageText = styled.h4`
+export const ImageText = styled.p`
+font-size: 15px;
     font-weight: 500;
     @media screen and (max-width: 991px) {
         font-weight: 600;
@@ -124,15 +90,8 @@ export const PreviewImg = styled.img`
     padding: 8px;
     user-select: none;
 
-    ${({ isChosen }) => (isChosen ? `
-    ` : ``)};
-
     ${ItemContainer}:hover & {
-        padding: 12px;
-        @media screen and (max-width: 991px) {
-            padding: 8px;
-            transition: all 0s ease-in-out;
-        }
+        opacity: 0.3;
     }   
 `
 

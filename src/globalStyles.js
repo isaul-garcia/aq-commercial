@@ -11,11 +11,11 @@ const GlobalStyle = createGlobalStyle`
     }    
 
     body {
-        background-color: #f0f0f0;
+        background-color: #ffffff;
         color: #111111;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        font-family: 'DM Sans', sans-serif;
+        font-family: 'Figtree', sans-serif;
         height: 100%;
         width: 100%;
         overflow-x: hidden;
@@ -77,7 +77,8 @@ const GlobalStyle = createGlobalStyle`
 
     p {
         font-weight: 300;
-        font-size: 1.25em;
+        font-size: 1.5em;
+        line-height: 1.5em;
     }
 
     button {
@@ -98,12 +99,12 @@ const GlobalStyle = createGlobalStyle`
     input {
         border: none;
         padding: 10px 12px;
-        border-radius: 5px;
+        /* border-radius: 5px; */
         margin-top: 4px;
         font-size: 1em;
         font-family: 'DM Sans', sans-serif;
         width: 40vw;
-        background-color: #f0f0f0;
+        border-bottom: 1px solid #000;
 
         @media screen and (max-width: 1300px) {
             width: 45vw;
@@ -117,11 +118,10 @@ const GlobalStyle = createGlobalStyle`
     textarea {
         border: none;
         padding: 10px 12px;
-        border-radius: 5px;
         margin-top: 4px;
         font-size: 1em;
         font-family: 'DM Sans', sans-serif;
-        background-color: #f0f0f0;
+        border-bottom: 1px solid #000;
     }
 `
 
@@ -137,7 +137,6 @@ export const Wrapper = styled.div`
     display: inline-block;
     height: 100%;
     width: 100%;
-    background: linear-gradient(205deg, rgba(240,240,240,1) 0%, rgba(222,194,181,1) 100%);
 `
 
 export const Section = styled.div`

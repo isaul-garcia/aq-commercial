@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { SmallSpacer } from '../../globalStyles'
-import { DetailText, InputSection, MyForm, ObjectiveInput, Section, TextWrapper } from './From.elements'
+import { Container, InputSection, MyForm, ObjectiveInput, Section, TextWrapper } from './FromModule.elements'
 
-const Form = ({ data, where, format, photoType, vidType, scene, amount, addons }) => {
+const Form = ({ data, where, format, photoType, vidType, scene, amount, addons, page }) => {
     const [title, setTitle] = useState('')
     const [objective, setObjective] = useState('')
     const [url, setUrl] = useState('')
@@ -23,13 +23,13 @@ const Form = ({ data, where, format, photoType, vidType, scene, amount, addons }
 
     return (
         <>
-            <div>
+            <Container page={page}>
                 <TextWrapper>
                     <h2>{data.info.main}</h2>
                     <h3>{data.info.sub}</h3>
                 </TextWrapper>
                 <Section>
-                    <MyForm>
+                    <MyForm >
                         <form action="https://formsubmit.co/c2e36065a7b4566d00310bd71bdd720e" method="POST">
                             <input type="hidden" name="WHERE" value={where} />
                             <input type="hidden" name="FORMAT" value={format} />
@@ -67,9 +67,6 @@ const Form = ({ data, where, format, photoType, vidType, scene, amount, addons }
                             </InputSection>
                             <InputSection>
                                 <h5 style={{ display: "inline" }}>Moodboard</h5>
-                                <DetailText>
-                                    Need inspiration? Check out our <a style={{ color: '#444' }} href="pinterest.com">Pinterest</a>
-                                </DetailText>
                                 <input
                                     type="text"
                                     name="URL"
@@ -94,13 +91,13 @@ const Form = ({ data, where, format, photoType, vidType, scene, amount, addons }
                                     required
                                 />
                             </InputSection>
-                            <input type="hidden" name="_next" value="/thankyou" />
+                            <input type="hidden" name="_next" value="#/thankyou" />
                             <SmallSpacer />
-                            <button type="submit">Submit</button>
+                            <button type="submit" style={{float: 'right'}}>Submit</button>
                         </form>
                     </MyForm>
                 </Section>
-            </div>
+            </Container>
         </>
     )
 }

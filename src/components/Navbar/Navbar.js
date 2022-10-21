@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import {
     Icon,
     IconWrapper,
-    NavContainer,
+    Container,
+    Wrapper,
     Nav,
     NavWrapper,
     NavText,
@@ -16,16 +17,19 @@ const Navs = () => {
     return (
         <NavWrapper>
             <Nav>
-                <NavText>Photos</NavText>
+                <NavText to="/">Photos</NavText>
             </Nav>
             <Nav>
-                <NavText>Videos</NavText>
+                <NavText to="/">Videos</NavText>
             </Nav>
             <Nav>
-                <NavText>About</NavText>
+                <NavText to="/">About</NavText>
             </Nav>
             <Nav>
-                <NavText>Contact</NavText>
+                <NavText to="/form">Form</NavText>
+            </Nav>
+            <Nav>
+                <NavText to="/">Contact</NavText>
             </Nav>
         </NavWrapper>)
 }
@@ -52,27 +56,28 @@ const Navbar = () => {
     return (
         <>
             <IconContext.Provider value={{ size: 30 }}>
-                <NavContainer>
-                    <IconWrapper to="/">
-                        <Icon src={svgIcon} onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); }} />
-                    </IconWrapper>
+                <Container>
+                    <Wrapper>
+                        <IconWrapper to="/">
+                            <Icon src={svgIcon} onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); }} />
+                        </IconWrapper>
 
-                    {button ? (
-                        <>
-                            <MenuButton onClick={handleClick}>
-                                <GrMenu />
-                            </MenuButton>
-                            {view ? (
-                                <Navs />
-                            ) : (
-                                null
-                            )}
-                        </>
-                    ) : (
-                        <Navs />
-                    )}
-
-                </NavContainer>
+                        {button ? (
+                            <>
+                                <MenuButton onClick={handleClick}>
+                                    <GrMenu />
+                                </MenuButton>
+                                {view ? (
+                                    <Navs />
+                                ) : (
+                                    null
+                                )}
+                            </>
+                        ) : (
+                            <Navs />
+                        )}
+                    </Wrapper>
+                </Container>
             </IconContext.Provider>
         </>
     )

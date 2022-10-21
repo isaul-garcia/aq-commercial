@@ -1,7 +1,16 @@
 import styled from 'styled-components/macro'
 
+export const Container = styled.div`
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* transition: 1s; */
+    margin-left: ${({ page }) => (page ? '0%' : '100%')};
+`
+
 export const MyForm = styled.div`
-    width: 500px;
+    width: 100%;
+    
 
     @media screen and (max-width: 991px) {
         width: 90vw;
@@ -17,7 +26,7 @@ export const Wrapper = styled.div`
 
 export const Section = styled.div`
     width: 40vw;
-    height: 75vh;
+    height: 65vh;
     margin-left: 30vw;
     margin-top: 5vh;
     position: relative;
@@ -72,7 +81,7 @@ export const DetailText = styled.h5`
 
 export const InputSection = styled.div`
     width: 40vw;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     @media screen and (max-width: 1300px) {
         width: 45vw;
@@ -85,7 +94,7 @@ export const InputSection = styled.div`
 
 export const ObjectiveInput = styled.textarea`
     width: 40vw;
-    height: 200px;
+    height: 120px;
 
     @media screen and (max-width: 1300px) {
         width: 45vw;

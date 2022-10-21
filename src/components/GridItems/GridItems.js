@@ -30,13 +30,12 @@ const OnlyOneChoice = ({ half, answer, choices, setIsChosen, isChosen, handleOne
         <>
             <ItemContainer half={half} onClick={handleOneChoice}>
                 <ItemWrapper>
-                    <HoverHelper isChosen={isChosen}>
-                        <TextContainer>
-                            <TextWrapper>
-                                <ImageText>{header}</ImageText>
-                            </TextWrapper>
-                        </TextContainer>
-                    </HoverHelper>
+                    <TextContainer>
+                        <TextWrapper>
+                            <ImageText>{header}</ImageText>
+                        </TextWrapper>
+                    </TextContainer>
+                    <HoverHelper isChosen={isChosen} />
                     <PreviewImg isChosen={isChosen} src={Img} />
                 </ItemWrapper>
             </ItemContainer>
@@ -74,13 +73,12 @@ const GridItems = ({ half, choices, setChoices, handleChosen, handleOneChosen, o
                 :
                 <ItemContainer half={half} onClick={handleChoice}>
                     <ItemWrapper>
-                        <HoverHelper isChosen={isChosen}>
-                            <TextContainer >
-                                <TextWrapper>
-                                    <ImageText>{props.header}</ImageText>
-                                </TextWrapper>
-                            </TextContainer>
-                        </HoverHelper>
+                        <HoverHelper isChosen={isChosen} />
+                        <TextContainer >
+                            <TextWrapper>
+                                <ImageText>{props.header}</ImageText>
+                            </TextWrapper>
+                        </TextContainer>
                         <PreviewImg isChosen={isChosen} src={props.Img} />
                     </ItemWrapper>
                 </ItemContainer>

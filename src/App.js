@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import WebFont from 'webfontloader'
 import GlobalStyle from './globalStyles'
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
-import { Home, Thanks } from './pages'
+import { Home, Form, Thanks } from './pages'
 import { Navbar } from './components'
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
   useEffect(() => {
     WebFont.load({
       google: {
-        families: ['DM Sans']
+        families: ['Figtree']
       }
     });
   }, []);
@@ -33,6 +33,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/form" element={<Form />} />
         <Route path="/thankyou" element={<Thanks />} />
       </Routes>
     </Router>

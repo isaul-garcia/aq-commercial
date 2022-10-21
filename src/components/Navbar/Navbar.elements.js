@@ -1,23 +1,36 @@
 import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 
-export const NavContainer = styled.div`
+export const Container = styled.div`
     position: sticky;
-    height: 70px;
+    height: 80px;
     width: 100%;
-    padding: 12px;
+    padding: 0 100px;
+    margin-top: 100px;
     top: 0;
     z-index: 202;
     transition: all .1s ease-in-out;
-    background-color: #f0f0f0;
-    border-bottom: 1px solid #ddd;
+    background-color: #ffffffdd;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+
+    @media screen and (max-width: 1500px) {
+        padding: 0 80px;
+        margin-top: 70px;
+    }
+`
+
+export const Wrapper = styled.div`
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
 `
 
 export const NavWrapper = styled.div`
     float: right;
 
     @media screen and (max-width: 991px) {
-        background-color: #f0f0f0;
         height: 100vh;
         width: 100vw;
         float: left;
@@ -56,8 +69,17 @@ export const MenuButton = styled.div`
     }
 `
 
-export const NavText = styled.h5` 
-    line-height: 35px;
+export const NavText = styled(Link)` 
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 70px;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.1s;
+
+    &:hover {
+        color: #999999;
+    }
 
     @media screen and (max-width: 991px) {
         font-size: 2em;
@@ -65,13 +87,25 @@ export const NavText = styled.h5`
 `
 
 export const IconWrapper = styled(Link)`
+    height: 100%;   
     transition: all .1s ease-in-out;
     text-decoration: none;
     position: relative;
-    margin-right: 10px;
+    margin-left: 10px;
 
     &:hover{
         opacity: 0.75;
+    }
+`
+
+export const Icon = styled.img`
+    height: 100%;
+    width: 300px;
+    position: relative;
+    display: inline-block;
+
+    @media screen and (max-width: 1500px) {
+        width: 230px;
     }
 `
 
@@ -93,12 +127,6 @@ export const BackWrapper = styled(Link)`
     &:hover {
         background-color: #ff6000;
     }
-`
-
-export const Icon = styled.img`
-    height: 100%;
-    position: relative;
-    display: inline-block;
 `
 
 export const BackIconWrapper = styled(Link)`
