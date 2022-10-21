@@ -9,7 +9,7 @@ import {
     NavText,
     MenuButton
 } from './Navbar.elements';
-import svgIcon from '../../assets/AQsolo.svg';
+import svgIcon from '../../assets/AQV.svg';
 import { IconContext } from 'react-icons/lib';
 import { GrMenu } from 'react-icons/gr'
 

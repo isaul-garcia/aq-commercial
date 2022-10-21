@@ -1,4 +1,6 @@
 export { default as Navbar } from './Navbar/Navbar';
+export { default as NavbarCommercial } from './Navbar/NavbarCommercial';
+export { default as NavbarViews } from './Navbar/NavbarViews';
 export { default as Question } from './Question/Question';
 export { default as PreQuestion } from './Question/PreQuestion';
 export { default as GridItems } from './GridItems/GridItems';

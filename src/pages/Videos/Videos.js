@@ -1,17 +1,17 @@
 import React from 'react'
 import {
-    GalleryItem, Navbar, NavbarViews
+    GalleryItem, Navbar
 } from '../../components'
 import {
     Wrapper,
     Section
-} from './Home.elements'
+} from './Videos.elements'
 import { projects } from './Data'
 
 const Home = () => {
     return (
         <>
-        <NavbarViews />
+        <Navbar />
             <Wrapper>
                 <Section>
                     {projects.map((props, key) => (

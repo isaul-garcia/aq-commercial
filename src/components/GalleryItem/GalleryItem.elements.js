@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro'
 
 export const ItemContainer = styled.div`
-    flex: 33.33%;   
+    flex: 50%;   
     height: ${({ half }) => (half ? '40vh' : '60vh')};
     position: relative;
     cursor: pointer;

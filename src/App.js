@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import WebFont from 'webfontloader'
 import GlobalStyle from './globalStyles'
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
-import { Home, Form, Thanks } from './pages'
+import { Home, Form, Thanks, Videos, Photos } from './pages'
 import { Navbar } from './components'
 
 const App = () => {
@@ -30,9 +30,11 @@ const App = () => {
   return (
     <Router>
       <GlobalStyle />
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/videos" element={<Videos />} />
+        <Route path="/photos" element={<Photos />} />
         <Route path="/form" element={<Form />} />
         <Route path="/thankyou" element={<Thanks />} />
       </Routes>
