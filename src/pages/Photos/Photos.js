@@ -11,7 +11,6 @@ import { projects } from './Data'
 const Home = () => {
     return (
         <>
-        <Navbar />
             <Wrapper>
                 <Section>
                     {projects.map((props, key) => (

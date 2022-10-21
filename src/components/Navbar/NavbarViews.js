@@ -9,7 +9,7 @@ import {
     NavText,
     MenuButton
 } from './Navbar.elements';
-import svgIcon from '../../assets/AQV.svg';
+import svgIcon from '../../assets/AQC.svg';
 import { IconContext } from 'react-icons/lib';
 import { GrMenu } from 'react-icons/gr'
 
@@ -17,13 +17,7 @@ const Navs = () => {
     return (
         <NavWrapper>
             <Nav>
-                <NavText to="/">Home</NavText>
-            </Nav>
-            <Nav>
-                <NavText to="/photos">Photos</NavText>
-            </Nav>
-            <Nav>
-                <NavText to="/videos">Videos</NavText>
+                <NavText to="/">Portfolio</NavText>
             </Nav>
             <Nav>
                 <NavText to="/">About</NavText>

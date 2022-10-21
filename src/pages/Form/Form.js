@@ -70,7 +70,6 @@ const Form = () => {
 
     return (
         <>
-        <NavbarCommercial />
             <Wrapper>
                 <div style={{ textAlign: 'center', height: '30vh', marginTop: '100px' }}>
                     <h1>Let's get started with your shoot!</h1>

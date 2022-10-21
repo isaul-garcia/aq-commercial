@@ -17,13 +17,7 @@ const Navs = () => {
     return (
         <NavWrapper>
             <Nav>
-                <NavText to="/">Home</NavText>
-            </Nav>
-            <Nav>
-                <NavText to="/photos">Photos</NavText>
-            </Nav>
-            <Nav>
-                <NavText to="/videos">Videos</NavText>
+                <NavText to="/">Portfolio</NavText>
             </Nav>
             <Nav>
                 <NavText to="/">About</NavText>

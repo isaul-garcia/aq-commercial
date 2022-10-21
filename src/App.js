@@ -30,7 +30,7 @@ const App = () => {
   return (
     <Router>
       <GlobalStyle />
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/videos" element={<Videos />} />
