@@ -5,20 +5,23 @@ import {
     PreviewImg,
     TextContainer,
     ItemWrapper,
-    ImageText
+    ImageText,
+    ImgWrapper
 } from './GalleryItem.elements'
 
 const GridItems = ({ half, ...props }) => {
     return (
         <>
-            <ItemContainer half={half} >
+            <ItemContainer half={half} onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); }} to={props.url}>
                 <ItemWrapper>
                     <TextContainer >
                         <TextWrapper>
                             <ImageText>{props.header}</ImageText>
                         </TextWrapper>
                     </TextContainer>
-                    <PreviewImg src={props.Img} />
+                    <ImgWrapper>
+                        <PreviewImg src={props.Img} />
+                    </ImgWrapper>
                 </ItemWrapper>
             </ItemContainer>
         </>

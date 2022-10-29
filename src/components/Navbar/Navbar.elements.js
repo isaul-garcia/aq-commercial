@@ -15,8 +15,8 @@ export const Container = styled.div`
     backdrop-filter: blur(25px);
 
     @media screen and (max-width: 1500px) {
-        padding: 0 80px;
-        margin-top: 70px;
+        padding: 0 30px;
+        margin-top: 30px;
     }
 `
 
@@ -33,8 +33,9 @@ export const NavWrapper = styled.div`
     @media screen and (max-width: 991px) {
         height: 100vh;
         width: 100vw;
-        float: left;
-        margin: 8px -12px;
+        margin-top: -0.4vh;
+        margin-right: -7.9vw;
+    background-color: #ffffffee;
     }
 `
 
@@ -63,6 +64,7 @@ export const MenuButton = styled.div`
     transition: all 0.1s ease-in-out;
     vertical-align: top;
     display: none;
+    margin: 16px 0;
 
     @media screen and (max-width: 991px) {
         display: inline;

@@ -6,18 +6,19 @@ export const Wrapper = styled.div`
     margin: 5vw;
 
     @media screen and (max-width: 991px) {
-        height: 90vh;
+        height: 134vh;
     }
 `
 
 export const Section = styled.div`
     position: relative;
+    width: 100%;
     display: inline-flex;
     flex-wrap: wrap;
 
     @media screen and (max-width: 991px) {
         width: 90vw;
         height: 65vh;
-        margin-left: 5vw;
+        margin-left: 0vw;
     }
 `

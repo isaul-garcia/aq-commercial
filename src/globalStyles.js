@@ -72,7 +72,7 @@ const GlobalStyle = createGlobalStyle`
 
     h5 {
         font-weight: 400;
-        font-size: 1.25em;
+        font-size: 1.1em;
     }    
 
     p {
@@ -83,16 +83,15 @@ const GlobalStyle = createGlobalStyle`
 
     button {
         cursor: pointer;
-        background-color: #007bff;
-        border: 1px #006be1 solid;
-        border-radius: 8px;
+        background-color: #fff;
+        border: 1px #000 solid;
         padding: 10px 16px;
         font-size: 1.15em;
-        color: #fff;
+        color: #000;
     }
 
     button:hover {
-        background-color: #006de6;
+        background-color: #000;
         color: #fff;
     }
 
@@ -123,10 +122,22 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'DM Sans', sans-serif;
         border-bottom: 1px solid #000;
     }
+
+    @keyframes justFade {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
 `
 
 export const SmallSpacer = styled.div` 
     height: 16px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+`
+
+export const MediumSpacer = styled.div` 
+    height: 9vh;
     width: 100%;
     display: inline-block;
     position: relative;

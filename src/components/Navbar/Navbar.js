@@ -17,20 +17,17 @@ const Navs = () => {
     return (
         <NavWrapper>
             <Nav>
-                <NavText to="/">Portfolio</NavText>
+                <NavText onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); }} to="/">Portfolio</NavText>
             </Nav>
             <Nav>
-                <NavText to="/">About</NavText>
-            </Nav>
-            <Nav>
-                <NavText to="/form">Contact</NavText>
+                <NavText onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); }} to="/about">About / Contact</NavText>
             </Nav>
         </NavWrapper>)
 }
 
 const Navbar = () => {
-    const [button, setButton] = useState(false);
-    const [view, setView] = useState(false);
+    const [button, setButton] = useState(+false);
+    const [view, setView] = useState(+false);
 
     const handleClick = () => setView(!view);
 
@@ -70,6 +67,7 @@ const Navbar = () => {
                         ) : (
                             <Navs />
                         )}
+                        
                     </Wrapper>
                 </Container>
             </IconContext.Provider>

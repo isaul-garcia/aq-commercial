@@ -1,21 +1,22 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components/macro'
 
-export const ItemContainer = styled.div`
-    flex: 50%;   
-    height: ${({ half }) => (half ? '40vh' : '60vh')};
+export const ItemContainer = styled(Link)`
+    flex: 45vw;   
+    height: 55vh;
     position: relative;
     cursor: pointer;
     transition: all .2s ease-in-out;
 
     @media screen and (max-width: 991px) {
-        flex: ${({ half }) => (half ? '50%' : '100%')};  
-        height: ${({ half }) => (half ? '50%' : '50%')};
+        flex: 50%;  
+        height: 50%;
     }
 `
 
 export const ItemWrapper = styled.div`
     width: 100%;
-    height: 100%;  
+    height: 100%; 
     transition: all .2s ease-in-out;
     position: relative;
 `
@@ -81,14 +82,23 @@ font-size: 15px;
     }
 `
 
+export const ImgWrapper = styled.div` 
+height: 100%;
+width: 100%;
+    position: relative;
+    overflow: hidden;
+`
+
 export const PreviewImg = styled.img`
     width: 100%;
     height: 100%;
+    object-fit: cover; 
     display: block;
-    object-fit: cover;  
     transition: all .2s ease-in-out;
     padding: 8px;
-    user-select: none;
+    user-select: none;    
+    transition: all 0.5s;
+  overflow: auto;
 
     ${ItemContainer}:hover & {
         opacity: 0.3;

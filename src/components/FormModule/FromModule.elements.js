@@ -3,9 +3,6 @@ import styled from 'styled-components/macro'
 export const Container = styled.div`
     width: 100%;
     height: 100%;
-    position: absolute;
-    /* transition: 1s; */
-    margin-left: ${({ page }) => (page ? '0%' : '100%')};
 `
 
 export const MyForm = styled.div`
@@ -81,7 +78,7 @@ export const DetailText = styled.h5`
 
 export const InputSection = styled.div`
     width: 40vw;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     @media screen and (max-width: 1300px) {
         width: 45vw;

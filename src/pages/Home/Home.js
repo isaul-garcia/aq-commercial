@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    GalleryItem, Navbar, NavbarViews
+    GalleryItem
 } from '../../components'
 import {
     Wrapper,

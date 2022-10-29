@@ -1,9 +1,6 @@
 export { default as Navbar } from './Navbar/Navbar';
-export { default as NavbarCommercial } from './Navbar/NavbarCommercial';
-export { default as NavbarViews } from './Navbar/NavbarViews';
-export { default as Question } from './Question/Question';
-export { default as PreQuestion } from './Question/PreQuestion';
-export { default as GridItems } from './GridItems/GridItems';
+export { default as About } from './About/About';
+export { default as Footer } from './Footer/Footer';
 export { default as GalleryItem } from './GalleryItem/GalleryItem';
 export { default as FormModule } from './FormModule/FormModule';
-export { default as Progression } from './Progression/Progression';
+export { default as VideoModule } from './VideoModule/VideoModule';
