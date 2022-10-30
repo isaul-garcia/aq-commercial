@@ -23,7 +23,7 @@ const Home = () => {
                 <Section>
                     <VideoWrapper>
                         <Vimeo
-                            video="763993945"
+                            video="765432441"
                             responsive
                             loop={true}
                             volume={0}
@@ -45,6 +45,15 @@ const Home = () => {
                             mw={'85'} mh={'24'} mx={'3'} my={'59'}
                         />
                     </Batch>
+                    <VideoWrapper vertical right style={{ marginTop: '20vh' }}>
+                        <Vimeo
+                            video="765433774"
+                            responsive
+                            loop={true}
+                            volume={0}
+                            autoplay
+                        />
+                    </VideoWrapper>
                     <Batch>
                         <ImageFrame src={Img5}
                             ww={'17'} hh={'47'} xx={'3'} yy={'2'}
@@ -54,25 +63,27 @@ const Home = () => {
                             ww={'17'} hh={'47'} xx={'24'} yy={'17'}
                             mw={'40'} mh={'34'} mx={'48'} my={'8'}
                         />
-                        <ImageFrame src={Img1}
-                            ww={'40'} hh={'45'} xx={'46'} yy={'10'}
-                            mw={'78'} mh={'23'} mx={'7'} my={'54'}
-                        />
                     </Batch>
                     <Batch>
-                        <ImageFrame src={Img7}
-                            ww={'43'} hh={'49'} xx={'4'} yy={'22'}
-                            mw={'78'} mh={'26'} mx={'7'} my={'4'}
-                        />
                         <ImageFrame src={Img6}
-                            ww={'30'} hh={'32'} xx={'54'} yy={'12'}
+                            ww={'30'} hh={'32'} xx={'54'} yy={'6'}
                             mw={'72'} mh={'20'} mx={'7'} my={'37'}
                         />
                         <ImageFrame src={Img7}
-                            ww={'30'} hh={'32'} xx={'51'} yy={'50'}
+                            ww={'30'} hh={'32'} xx={'51'} yy={'45'}
                             mw={'72'} mh={'20'} mx={'13'} my={'63'}
                         />
                     </Batch>
+                    <VideoWrapper vertical style={{ marginTop: '-45vh', height: '45vh' }}>
+                        <Vimeo
+                            video="765434824"
+                            height={'690px'}
+                            width={'550px'}
+                            loop={true}
+                            volume={0}
+                            autoplay
+                        />
+                    </VideoWrapper>
                     <MediumSpacer />
                     <MediumSpacer />
                 </Section>
