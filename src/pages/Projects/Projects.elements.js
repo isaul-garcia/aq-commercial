@@ -25,23 +25,35 @@ export const Batch = styled.div`
     position: relative;
 
     @media screen and (max-width: 991px) {
-        height: ${({ shrink }) => (shrink ? '40vh' : '80vh')};
+        height: ${({ shrink }) => (shrink ? '40vh' : '100%')};
     }
 `
 
 
 export const VideoWrapper = styled.div`
     height: 75vh;
-    padding: 0vh 8vw;
+    padding: 0vh 1vw;
     text-align: center;
     width: ${({ vertical, third }) => (vertical ? (third ? '35vw' : '50vw') : '')};
-    float: ${({ right }) => (right ? 'right' : '')};
+    margin-left: ${({ right }) => (right ? '15vw' : '')};
+    position: ${({ big }) => (big ? '' : 'absolute')};
+    width: ${({ ww }) => (ww)}vw;
+    height: ${({ hh }) => (hh)}vh;
+    margin-top: ${({ yy }) => (yy)}vh;
+    margin-left: ${({ xx }) => (xx)}vw;
+    z-index: 9;
 
     @media screen and (max-width: 991px) {
         width: 90vw;
         height: 100%;
         overflow: hidden;
-        padding: 0vh 2vw;
+        padding: 0;
+        width: 90vw;
+        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        display: inline-block;
+        position: relative;
     }
 `
 
@@ -50,7 +62,7 @@ export const ImageFrame = styled.img`
     height: ${({ hh }) => (hh)}vh;
     margin-top: ${({ yy }) => (yy)}vh;
     margin-left: ${({ xx }) => (xx)}vw;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     position: absolute;
 
@@ -59,5 +71,11 @@ export const ImageFrame = styled.img`
         height: ${({ mh }) => (mh)}vh;
         margin-top: ${({ my }) => (my)}vh;
         margin-left: ${({ mx }) => (mx)}vw;
+        width: 90vw;
+        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        display: inline-block;
+        position: relative;
     }
 `

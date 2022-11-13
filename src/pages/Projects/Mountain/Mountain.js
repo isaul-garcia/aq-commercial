@@ -19,7 +19,10 @@ const Home = () => {
         <>
             <Wrapper>
                 <Section>
-                    <VideoWrapper>
+                    <h2>Mountain View Water - Social Media Ad</h2>
+                    <h4>Lifestyle content for a premium bottled water brand.</h4>
+                    <MediumSpacer />
+                    <VideoWrapper big hh={92}>
                         <Vimeo
                             video="763990788"
                             responsive
@@ -28,32 +31,35 @@ const Home = () => {
                             autoplay
                         />
                     </VideoWrapper>
-                    <MediumSpacer />
+                    <MediumSpacer/>
                     <Batch>
                         <ImageFrame src={Img3}
-                            ww={'24'} hh={'62'} xx={'4'} yy={'2'}
+                            ww={'27'} hh={'77'} xx={'4'} yy={'2'}
                             mw={'46'} mh={'38'} mx={'4'} my={'2'}
                         />                        
                         <ImageFrame src={Img4}
-                            ww={'24'} hh={'62'} xx={'62'} yy={'2'}
+                            ww={'27'} hh={'77'} xx={'62'} yy={'2'}
                             mw={'46'} mh={'38'} mx={'33'} my={'46'}
                         />
                         <ImageFrame src={Img5}
-                            ww={'24'} hh={'62'} xx={'33'} yy={'8'}
+                            ww={'27'} hh={'77'} xx={'33'} yy={'8'}
                             mw={'46'} mh={'38'} mx={'33'} my={'46'}
                         />
                     </Batch>
-                    <MediumSpacer />
+                    <MediumSpacer mobiRemove/>
                     <Batch>
                         <ImageFrame src={Img1}
-                            ww={'24'} hh={'62'} xx={'19'} yy={'8'}
+                            ww={'27'} hh={'77'} xx={'19'} yy={'20'}
                             mw={'46'} mh={'38'} mx={'4'} my={'0'}
                         />
                         <ImageFrame src={Img2}
-                            ww={'24'} hh={'62'} xx={'48'} yy={'8'}
+                            ww={'27'} hh={'77'} xx={'48'} yy={'20'}
                             mw={'46'} mh={'38'} mx={'38'} my={'43'}
                         />
                     </Batch>
+                    <MediumSpacer mobiRemove/>
+                    <MediumSpacer mobiRemove/>
+                    <MediumSpacer mobiRemove/>
                     <MediumSpacer />
                 </Section>
             </Wrapper>

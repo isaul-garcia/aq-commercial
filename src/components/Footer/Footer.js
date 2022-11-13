@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 import {
     FooterContainer,
     SocialMedia,
@@ -16,13 +16,10 @@ const Footer = () => {
             <FooterContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SmallText>contact@aqcommercial.com</SmallText>
+                        <SmallText><a style={{textDecoration: 'none', color: '#1e1e1e'}} href="mailto:aqcommercial@gmail.com">aqcommercial@gmail.com</a></SmallText>
                         <SocialIcons>
-                            <SocialIconLink href="" target="_blank" aria-label="Instagram">
+                            <SocialIconLink href="https://www.instagram.com/aqcommercial/" target="_blank" aria-label="Instagram">
                                 <FaInstagram />
-                            </SocialIconLink>
-                            <SocialIconLink href="" target="_blank" aria-label="Facebook">
-                                <FaFacebook />
                             </SocialIconLink>
                         </SocialIcons>
                     </SocialMediaWrap>

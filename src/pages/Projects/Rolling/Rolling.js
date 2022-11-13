@@ -22,17 +22,21 @@ const Home = () => {
         <>
             <Wrapper>
                 <Section>
+                    <h2>Rolling Tin Cafe - Branding Content</h2>
+                    <h4>Photo + Video assets for the launch of their new line of cold brew.</h4>
+                    <MediumSpacer />
                     <Batch>
                         <ImageFrame src={Img2}
-                            ww={'35'} hh={'45'} xx={'7'} yy={'2'}
+                            ww={'43'} hh={'54'} xx={'2'} yy={'2'}
                             mw={'76'} mh={'32'} mx={'4'} my={'2'}
                         />
                         <ImageFrame src={Img1}
-                            ww={'35'} hh={'45'} xx={'48'} yy={'5'}
+                            ww={'43'} hh={'54'} xx={'48'} yy={'5'}
                             mw={'76'} mh={'32'} mx={'10'} my={'41'}
                         />
                     </Batch>
-                    <VideoWrapper>
+                    <MediumSpacer/>
+                    <VideoWrapper big hh={92}>
                         <Vimeo
                             video="763993945"
                             responsive
@@ -44,30 +48,30 @@ const Home = () => {
                     <MediumSpacer />
                     <Batch>
                         <ImageFrame src={Img10}
-                            ww={'37'} hh={'52'} xx={'4'} yy={'2'}
+                            ww={'34'} hh={'44'} xx={'2'} yy={'2'}
                             mw={'76'} mh={'28'} mx={'4'} my={'-2'}
                         />
-                        <ImageFrame src={Img3}
-                            ww={'20'} hh={'28'} xx={'65'} yy={'5'}
-                            mw={'67'} mh={'24'} mx={'18'} my={'33'}
-                        />
                         <ImageFrame src={Img12}
-                            ww={'18'} hh={'44'} xx={'44'} yy={'17'}
+                            ww={'24'} hh={'51'} xx={'38'} yy={'10'}
                             mw={'39'} mh={'30'} mx={'4'} my={'64'}
                         />
+                        <ImageFrame src={Img3}
+                            ww={'24'} hh={'30'} xx={'64'} yy={'3'}
+                            mw={'67'} mh={'24'} mx={'18'} my={'33'}
+                        />
                     </Batch>
-                    <SmallSpacer />
+                    <SmallSpacer/>
                     <Batch>
                         <ImageFrame src={Img4}
-                            ww={'20'} hh={'52'} xx={'4'} yy={'2'}
+                            ww={'25'} hh={'68'} xx={'2'} yy={'-6'}
                             mw={'39'} mh={'30'} mx={'48'} my={'2'}
                         />
                         <ImageFrame src={Img6}
-                            ww={'35'} hh={'44'} xx={'28.5'} yy={'17'}
+                            ww={'35'} hh={'44'} xx={'29'} yy={'8'}
                             mw={'64'} mh={'30'} mx={'20'} my={'55'}
                         />
                         <ImageFrame src={Img9}
-                            ww={'18'} hh={'48'} xx={'68'} yy={'5'}
+                            ww={'21'} hh={'59'} xx={'66'} yy={'0'}
                             mw={'39'} mh={'30'} mx={'4'} my={'20'}
                         />
                     </Batch>

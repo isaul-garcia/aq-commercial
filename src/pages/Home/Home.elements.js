@@ -3,10 +3,10 @@ import styled from 'styled-components/macro'
 
 export const Wrapper = styled.div` 
     width: 90vw;
-    margin: 5vw;
+    margin: 4vw 5vw;
 
     @media screen and (max-width: 991px) {
-        height: 134vh;
+        height: 100vh;
     }
 `
 

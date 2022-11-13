@@ -10,7 +10,7 @@ align-items: center;
 `
 
 export const Photo = styled.img`
-    height: 420px;
+    height: 480px;
     display: block;
     position: relative;
     object-fit: cover;

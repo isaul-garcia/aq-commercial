@@ -50,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
 
     h2 {
         font-weight: 900;
-        font-size: 4vh;
+        font-size: 3.5vh;
         @media screen and (max-width: 991px) {
             line-height: 4.25vh;
         }
@@ -66,13 +66,13 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h4 {
-        font-weight: 600;
-        font-size: 1.5em;
+        font-weight: 400;
+        font-size: 1.35em;
     }
 
     h5 {
         font-weight: 400;
-        font-size: 1.1em;
+        font-size: 1em;
     }    
 
     p {
@@ -97,21 +97,13 @@ const GlobalStyle = createGlobalStyle`
 
     input {
         border: none;
-        padding: 10px 12px;
+        padding: 8px 10px;
         /* border-radius: 5px; */
         margin-top: 4px;
-        font-size: 1em;
+        font-size: 0.9em;
         font-family: 'DM Sans', sans-serif;
-        width: 40vw;
+        width: 100%;
         border-bottom: 1px solid #000;
-
-        @media screen and (max-width: 1300px) {
-            width: 45vw;
-        }
-
-        @media screen and (max-width: 991px) {
-            width: 90vw;
-        }
     }
 
     textarea {
@@ -134,6 +126,10 @@ export const SmallSpacer = styled.div`
     width: 100%;
     display: inline-block;
     position: relative;
+
+    @media screen and (max-width: 991px) {
+    height: ${(({ mobiRemove }) => (mobiRemove ? '0' : '16px'))};
+    }
 `
 
 export const MediumSpacer = styled.div` 
@@ -141,6 +137,10 @@ export const MediumSpacer = styled.div`
     width: 100%;
     display: inline-block;
     position: relative;
+    
+    @media screen and (max-width: 991px) {
+    height: ${(({ mobiRemove }) => (mobiRemove ? '0' : '9vh'))};
+    }
 `
 
 export const Wrapper = styled.div` 

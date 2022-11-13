@@ -13,13 +13,13 @@ import svgIcon from '../../assets/AQC.svg';
 import { IconContext } from 'react-icons/lib';
 import { GrMenu } from 'react-icons/gr'
 
-const Navs = () => {
+const Navs = ({ handleClick }) => {
     return (
         <NavWrapper>
-            <Nav>
+            <Nav onClick={handleClick}>
                 <NavText onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); }} to="/">Portfolio</NavText>
             </Nav>
-            <Nav>
+            <Nav onClick={handleClick}>
                 <NavText onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); }} to="/about">About / Contact</NavText>
             </Nav>
         </NavWrapper>)
@@ -59,7 +59,7 @@ const Navbar = () => {
                                     <GrMenu />
                                 </MenuButton>
                                 {view ? (
-                                    <Navs />
+                                    <Navs handleClick={handleClick} />
                                 ) : (
                                     null
                                 )}
@@ -67,7 +67,7 @@ const Navbar = () => {
                         ) : (
                             <Navs />
                         )}
-                        
+
                     </Wrapper>
                 </Container>
             </IconContext.Provider>

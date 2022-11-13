@@ -1,8 +1,20 @@
 export const projects = ([
     {
+        header: 'Local Provisions',
+        url: '/local-provisions',
+        Img: require('../../assets/LocalProvisions/photo6.jpg'),
+    },
+
+    {
         header: 'AriUberti',
         url: '/ari-uberti',
         Img: require('../../assets/AriUberti/screengrab4.webp'),
+    },
+
+    {
+        header: 'Swamp Restaurant',
+        url: '/swamp-restaurant',
+        Img: require('../../assets/SwampRestaurant/photo18.jpg'),
     },
 
     {
@@ -20,28 +32,8 @@ export const projects = ([
     },
 
     {
-        header: 'Swamp Restaurant',
-        url: '/swamp-restaurant',
-        Img: require('../../assets/SwampRestaurant/photo18.jpg'),
-    },
-
-    {
-        header: 'Haven Hospice',
-        url: '/haven-hospice',
-        Img: require('../../assets/HavenHospice/photo3.webp'),
-        half: true,
-    },
-
-    {
         header: 'Botanica.co',
         url: '/botanica-co',
         Img: require('../../assets/Botanica.co/photo2.webp'),
-    },
-
-    {
-        header: 'Fujifilm Instax SQ1',
-        url: '/fujifilm',
-        Img: require('../../assets/FujifilmInstaxSQ1/photo1.jpg'),
-        half: true,
     }
 ]);

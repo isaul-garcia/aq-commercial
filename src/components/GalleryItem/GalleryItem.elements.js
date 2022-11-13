@@ -3,7 +3,8 @@ import styled from 'styled-components/macro'
 
 export const ItemContainer = styled(Link)`
     flex: 45vw;   
-    height: 55vh;
+    max-width: 45vw;
+    height: 42vh;
     position: relative;
     cursor: pointer;
     transition: all .2s ease-in-out;

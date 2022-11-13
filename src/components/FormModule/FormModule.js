@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { SmallSpacer } from '../../globalStyles'
-import { Container, InputSection, MyForm, ObjectiveInput, Section } from './FromModule.elements'
+import { Container, InputSection, ObjectiveInput, SendButton } from './FromModule.elements'
 
 const Form = () => {
     const [name, setName] = useState('')
@@ -32,93 +32,89 @@ const Form = () => {
     return (
         <>
             <Container>
-                <Section>
-                    <MyForm >
-                        <form action="https://formsubmit.co/c2e36065a7b4566d00310bd71bdd720e" method="POST">
-                            <InputSection>
-                                <h5>Name</h5>
-                                <input
-                                    type="text"
-                                    name="NAME"
+                <form action="https://formsubmit.co/c2e36065a7b4566d00310bd71bdd720e" method="POST">
+                    <InputSection>
+                        <h5>Name</h5>
+                        <input
+                            type="text"
+                            name="NAME"
 
-                                    id='name'
-                                    value={name}
-                                    onChange={handleNameChange}
+                            id='name'
+                            value={name}
+                            onChange={handleNameChange}
 
-                                    required
-                                />
-                            </InputSection>
-                            <InputSection>
-                                <h5>Email</h5>
-                                <input
-                                    type="text"
-                                    name="EMAIL"
+                            required
+                        />
+                    </InputSection>
+                    <InputSection>
+                        <h5>Email</h5>
+                        <input
+                            type="text"
+                            name="EMAIL"
 
-                                    id='email'
-                                    value={email}
-                                    onChange={handleEmailChange}
+                            id='email'
+                            value={email}
+                            onChange={handleEmailChange}
 
-                                    required
-                                />
-                            </InputSection>
-                            <InputSection>
-                                <h5>Business website</h5>
-                                <input
-                                    type="text"
-                                    name="WEBSITE"
+                            required
+                        />
+                    </InputSection>
+                    <InputSection>
+                        <h5>Business website</h5>
+                        <input
+                            type="text"
+                            name="WEBSITE"
 
-                                    id='website'
-                                    value={website}
-                                    onChange={handleWebsiteChange}
+                            id='website'
+                            value={website}
+                            onChange={handleWebsiteChange}
 
-                                    required
-                                />
-                            </InputSection>
-                            <InputSection>
-                                <h5>Shoot Title</h5>
-                                <input
-                                    type="text"
-                                    name="TITLE"
+                            required
+                        />
+                    </InputSection>
+                    <InputSection>
+                        <h5>Shoot Title</h5>
+                        <input
+                            type="text"
+                            name="TITLE"
 
-                                    id='title'
-                                    value={title}
-                                    onChange={handleTitleChange}
+                            id='title'
+                            value={title}
+                            onChange={handleTitleChange}
 
-                                    required
-                                />
-                            </InputSection>
-                            <InputSection>
-                                <h5>What business challenges are you looking to tackle?</h5>
-                                <ObjectiveInput
-                                    type="text"
-                                    name="OBJECTIVE"
+                            required
+                        />
+                    </InputSection>
+                    <InputSection>
+                        <h5>What business challenges are you looking to tackle?</h5>
+                        <ObjectiveInput
+                            type="text"
+                            name="OBJECTIVE"
 
-                                    id='objective'
-                                    value={objective}
-                                    onChange={handleObjectiveChange}
+                            id='objective'
+                            value={objective}
+                            onChange={handleObjectiveChange}
 
-                                    required
-                                />
-                            </InputSection>
-                            <InputSection>
-                                <h5>What is your budget?</h5>
-                                <input
-                                    type="text"
-                                    name="BUDGET"
+                            required
+                        />
+                    </InputSection>
+                    <InputSection>
+                        <h5>What is your budget?</h5>
+                        <input
+                            type="text"
+                            name="BUDGET"
 
-                                    id='budget'
-                                    value={budget}
-                                    onChange={handleBudgetChange}
+                            id='budget'
+                            value={budget}
+                            onChange={handleBudgetChange}
 
-                                    required
-                                />
-                            </InputSection>
-                            <input type="hidden" name="_next" value="#/thankyou" />
-                            <SmallSpacer />
-                            <button type="submit" style={{ float: 'right' }}>Send</button>
-                        </form>
-                    </MyForm>
-                </Section>
+                            required
+                        />
+                    </InputSection>
+                    <input type="hidden" name="_next" value="https://aq-commercial.vercel.app/#/" />
+                    <SmallSpacer />
+                    <SendButton type="submit">Send</SendButton>
+                </form>
             </Container>
         </>
     )

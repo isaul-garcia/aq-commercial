@@ -6,7 +6,7 @@ export const Container = styled.div`
     height: 80px;
     width: 100%;
     padding: 0 100px;
-    margin-top: 100px;
+    margin-top: 85px;
     top: 0;
     z-index: 202;
     transition: all .1s ease-in-out;

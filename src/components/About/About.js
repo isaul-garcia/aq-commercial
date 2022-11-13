@@ -3,10 +3,8 @@ import {
     Container, Description, Photo, TextContainer, Title
 } from './About.elements';
 import FormModule from '../FormModule/FormModule';
-import { MediumSpacer } from '../../globalStyles';
+import { MediumSpacer, SmallSpacer } from '../../globalStyles';
 import aqPhoto from '../../assets/AQPhoto.jpg';
-import aq from '../../assets/AQ.svg';
-import { HiMinus } from "react-icons/hi";
 
 const About = () => {
     return (
@@ -19,14 +17,11 @@ const About = () => {
             </TextContainer>
 
             <MediumSpacer />
-            {/* <HiMinus /> */}
-            {/* <AQicon src={aq}/> */}
-            <div style={{ width: '35px', borderBottom: '2px solid #000' }} />
-            <MediumSpacer />
+            <SmallSpacer/>
 
             <TextContainer>
                 <Title>
-                    <strong>Book</strong>
+                    <strong>Contact</strong>
                 </Title>
             </TextContainer>
             <FormModule />
