@@ -61,7 +61,6 @@ const Home = () => {
                             responsive
                             loop={true}
                             volume={0}
-                            autoplay
                         />
                     </VideoWrapper>
                     <MediumSpacer mobiRemove/>

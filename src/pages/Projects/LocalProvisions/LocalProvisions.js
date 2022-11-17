@@ -29,30 +29,39 @@ const Home = () => {
                             responsive
                             loop={true}
                             volume={0}
-                            autoplay
                         />
                     </VideoWrapper>
                     <MediumSpacer />
+                    <VideoWrapper vertical right third 
+                    ww={'26'} xx={'4'} yy={'10'}>
+                        <Vimeo
+                            video="771795892"
+                            responsive
+                            loop={true}
+                            volume={0}
+                            autoplay
+                        />
+                    </VideoWrapper>
                     <Batch>
                         <ImageFrame src={Img7}
-                            ww={'32'} hh={'50'} xx={'3'} yy={'17'}
+                            ww={'25'} hh={'32'} xx={'5'} yy={'94'}
                             mw={'90'} mh={'48'} mx={'0'} my={'-6'}
                         />
                         <ImageFrame src={Img10}
-                            ww={'25'} hh={'66'} xx={'36.5'} yy={'9.5'}
+                            ww={'25'} hh={'66'} xx={'32.5'} yy={'9.5'}
                             mw={'56'} mh={'30'} mx={'22'} my={'24'}
                         />
                         <ImageFrame src={Img8}
-                            ww={'25'} hh={'29'} xx={'62'} yy={'12'}
+                            ww={'25'} hh={'31'} xx={'60'} yy={'10'}
                             mw={'85'} mh={'24'} mx={'3'} my={'59'}
                         />
                         <ImageFrame src={Img9}
-                            ww={'25'} hh={'29'} xx={'62'} yy={'43'}
+                            ww={'25'} hh={'31'} xx={'62'} yy={'44'}
                             mw={'85'} mh={'24'} mx={'3'} my={'59'}
                         />
                     </Batch>
                     <VideoWrapper vertical right third 
-                    ww={'26'} xx={'36'} yy={'20'}>
+                    ww={'26'} xx={'32'} yy={'20'}>
                         <Vimeo
                             video="767707944"
                             responsive
@@ -62,11 +71,11 @@ const Home = () => {
                     </VideoWrapper>
                     <Batch>
                         <ImageFrame src={Img3}
-                            ww={'32'} hh={'50'} xx={'3'} yy={'32'}
+                            ww={'25'} hh={'32'} xx={'3'} yy={'69'}
                             mw={'79'} mh={'28'} mx={'5'} my={'-5'}
                         />
                         <ImageFrame src={Img5}
-                            ww={'24'} hh={'70'} xx={'63'} yy={'22'}
+                            ww={'28'} hh={'77'} xx={'60'} yy={'22'}
                             mw={'85'} mh={'24'} mx={'3'} my={'59'}
                         />
                     </Batch>
