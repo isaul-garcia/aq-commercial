@@ -12,7 +12,7 @@ const About = () => {
             <Photo src={aqPhoto} />
             <TextContainer>
                 <Description>
-                    <strong>Andrés Quiñones (AQ)</strong> Content partner based out of Gainesville, FL focused oncreating photo + video content that helps local and national brands build a stronger connection with their customers.
+                    <strong>Andrés Quiñones (AQ)</strong> Content partner based out of Puerto Rico focused on creating photo + video content that helps local and national brands build a stronger connection with their customers.
                 </Description>
             </TextContainer>
 
