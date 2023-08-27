@@ -20,8 +20,8 @@ const Home = () => {
         <>
             <Wrapper>
                 <Section>
-                    <h2>Local Provisions - Brand Video</h2>
-                    <h4>Lifestyle photo + video to represent the restaurant's atmosphere.</h4>
+                    <h2>King State Coffee</h2>
+                    <h4>Do What Fuels You Campaign</h4>
                     <MediumSpacer />
                     <VideoWrapper big>
                         <Vimeo
