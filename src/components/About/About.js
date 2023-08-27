@@ -4,7 +4,7 @@ import {
 } from './About.elements';
 import FormModule from '../FormModule/FormModule';
 import { MediumSpacer, SmallSpacer } from '../../globalStyles';
-import aqPhoto from '../../assets/AQPhoto.jpg';
+import aqPhoto from '../../assets/aqv-pfp.JPG';
 
 const About = () => {
     return (

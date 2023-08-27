@@ -14,6 +14,7 @@ export const Photo = styled.img`
     display: block;
     position: relative;
     object-fit: cover;
+    margin-top: 20px;
 `
 
 export const TextContainer = styled.div`
